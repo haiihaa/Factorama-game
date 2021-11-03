@@ -1,48 +1,16 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=450273&assignment_repo_type=GroupAssignmentRepo)
+[Open in Visual Studio Code]
 
 
 **The University of Melbourne**
-# COMP30019 – Graphics and Interaction
+# COMP30019 – Graphics and Interaction - Acknowledgment
 
-Final Electronic Submission (project): **4pm, November 1**
+This game project was a school-based project developed by Hai Ha, Haiyao Yan, Jerry Zhou and Katherine Wu. The repository got the permission of all other team members before being copied and published (since the original repo belongs to The University of Melbourne and is private). 
 
-Do not forget **One member** of your group must submit a text file to the LMS (Canvas) by the due date which includes the commit ID of your final submission.
+I would like to express my special thanks to my teammates (Haiyao, Jerry and Katherine) who contributed to developing this project and gave me valuable team experience throughout the semester. 
 
-You can add a link to your Gameplay Video here but you must have already submit it by **4pm, October 17**
+**Link to the game trailer made by Katherine Wu:**
 https://www.youtube.com/watch?v=GZtJLqMDruY
 
-# Project-2 README
-
-You must modify this `README.md` that describes your application, specifically what it does, how to use it, and how you evaluated and improved it.
-
-Remember that _"this document"_ should be `well written` and formatted **appropriately**. This is just an example of different formating tools available for you. For help with the format you can find a guide [here](https://docs.github.com/en/github/writing-on-github).
-
-
-**Get ready to complete all the tasks:**
-
-- [x] Read the handout for Project-2 carefully.
-
-- [x] Brief explanation of the game.
-
-- [x] How to use it (especially the user interface aspects).
-
-- [x] How you designed objects and entities.
-
-- [x] How you handled the graphics pipeline and camera motion.
-
-- [x] The procedural generation technique and/or algorithm used, including a high level description of the implementation details.
-
-- [x] Descriptions of how the custom shaders work (and which two should be marked).
-
-- [x] A description of the particle system you wish to be marked and how to locate it in your Unity project.
-
-- [x] Description of the querying and observational methods used, including a description of the participants (how many, demographics), description of the methodology (which techniques did you use, what did you have participants do, how did you record the data), and feedback gathered.
-
-- [x] Document the changes made to your game based on the information collected during the evaluation.
-
-- [x] References and external resources that you used.
-
-- [x] A description of the contributions made by each member of the group.
 
 ## Table of contents
 * [Explanation of the game](#explanation-of-the-game)
@@ -85,12 +53,12 @@ Our current version (after gathering feedback from testers)
 </p>
 
 ## How to play
-The process of gameplay comprises three basic tasks:
+**The process of gameplay comprises three basic tasks:**
   1. Choose an item when it arrives on the receiving conveyor belt. The receiving worker will move and move the item to storage.
   2. When an order shows up on the order bar, your next job is to select the correct item that is ordered. The picking worker will then move this item to the ready-to-pack conveyor belt   and transport it to the packing area.
   3. The final task is to select the item that is ready to be packed. The packing worker will pack the item and move it to the van station for delivery.
 
-During the gameplay:
+**During the gameplay:**
   - The van can be delivered whenever you want with a fuel cost of $30 each time, so be careful on making the right time to deliver.
   - From level 3, a debuff event is added where your workers get tired after an amount of working time. Their speed and efficiency are affected. Pay them to wake them up.
 
@@ -108,7 +76,7 @@ Since our game is set to take place in a fulfillment centre, we want to make the
 Firstly, to avoid the random generated boxes overlapping with other settings in the room, the area for generation is limited to certain parts of the room. Then to show that items are divided into groups, we use perlin noise to create natural clusters. Since the room area isn’t big, the perlin noise was re-scale to fit room size. Random offset values are introduced to scroll the perlin noise up and down which ensures a new arrangement of boxes will be generated when the scene is loaded. After inputting  x and y coordinates into the perlin noise function, the box will only be generated if the return value exceeds the threshold. Another threshold with greater value was also introduced to add another box on top of the generated box to enhance the cluster feel. The value of thresholds are determined by several trial tests and we hard-coded the values that we think fit the game environment. Additionally, random rotation and scale had also applied to make the arrangement more natural. 
 
 ## Shaders
-Illuminate Shader (Assets\Materials\Shaders\Illuminate.shader):
+**Illuminate Shader (Assets\Materials\Shaders\Illuminate.shader):**
 When the player clicks on the item, workers start walking toward their destinations. The illuminate shader provides the workers with an illuminate effect when they are triggered. In order to bring out this effect, we adopt the vert/frag shader structure
 
 To create the generic lighting effects (diffuse, ambient), we need to pass the world normal in the vertex shader. The dot product (tells us about the angle between the light and the surface) of the world normal and light normal are used in conjunction to create a diffuse lighting effect. This means the more visible the shader on workers the stronger the light (higher value of the dot product).
@@ -116,7 +84,7 @@ To create the generic lighting effects (diffuse, ambient), we need to pass the w
 The final color is the combination of the lighting effects (diffuse, ambient) and the rim color. We give rim power property a particular value for an appropriate strength of fade (with the rim color we set initially) on edges that creates an illuminating effect for workers.
 
 
-Dissolve Shader (Assets\Materials\Shaders\dissolve.shader)::
+**Dissolve Shader (Assets\Materials\Shaders\dissolve.shader):**
 The dissolve shader is responsible for giving baskets on the conveyor belt a nice dissolving effect before they are destroyed. This is achieved by using a vert/frag shader structure. We then apply some standard diffuse and ambient lighting effects to the color of the pixels. Shadows are also added to provide a depth effect to the basket. Then the pixel colors are turned red based on a grayscale noise texture just before they are deleted.
 
 For the generic lighting effects (diffuse, ambient) we do the same as the illuminate shader where we pass the world normal in the vertex shader. The dot product of the world normal and light normal are used in conjunction to create a diffuse lighting effect. 
@@ -145,30 +113,27 @@ The feedback we received from the Post-Task Walkthrough was that it was not obvi
 
 The feedback received from the Questionnaire was that participants felt very disconnected from the game and there was a lack of engagement and attachment with the game. This was due to the plain graphics and imagery, as well as the lack of a background story to provide a premise for the player’s goals. Participants felt that the game was too challenging and that it was impossible to proceed to the higher levels. With a total of 9 levels, participants were only able to make it to level 3 before they hit a wall with progression.
 
-The changes we made based on the feedback from the Post-Task Walkthrough are as follows:
+**The changes we made based on the feedback from the Post-Task Walkthrough are as follows:**
   - To address the issue of aimless spam clicking, we added pop ups and notifications when the player tries to execute another action but no workers are available so that they know if they need to wait before another action can be taken.
   - To improve the clarity of our user interface, we added the levels target to the main UI screen so that it is clearer to the player what needs to be achieved to pass the level.
   - To make it more obvious what the player needs to do to progress, we added hints to the pop up notifications and alerts so that if the player is stuck we can direct them to what they need to do. E.g. Telling them to run the Van when it is full.
 
-The changes we made based on the feedback from the Questionnaire are as follows:
+**The changes we made based on the feedback from the Questionnaire are as follows:**
   - To address the issue of the lack of engagement with the game, we tried to improve the graphics and imagery by taking inspiration from Overcooked’s backgrounds and added some decoration objects to the edge of the screen to create a more vibrant atmosphere. We also changed the texture of the floor and walls to add some more colors and make the game scene more exciting.
   - To address the issues with game difficulty, we revamped the characteristics of each level. We removed periodic debuff events and wage requirements from the lower levels. We also made some negative time events occur less frequently in the lower levels. These changes should allow players to progress to higher levels before feeling stuck and extremely challenged.
 
 
 ## References
-Highlighting System:
+**Highlighting System:**
 https://blog.csdn.net/f_957995490/article/details/105058638?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163360849116780265433318%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163360849116780265433318&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-105058638.pc_search_es_clickV2&utm_term=unity+highlight+system&spm=1018.2226.3001.4187 - Adding highlighting effect to the items - Package used from the link above to generate the highlight effect. As the material for the soccer ball contains a height map, therefore, the illuminate shader could not be used in this case.
 
-Dissolve Shader:
+**Dissolve Shader:**
 https://lindenreidblog.com/2017/12/16/dissolve-shader-in-unity/	- Tutorial on how to add a dissolve effect to the shader
 https://www.youtube.com/watch?v=4XfXOEDzBx4&t=2113s&ab_channel=WorldofZero 	- Tutorial to help understand how to use vert/frag shaders
 https://alastaira.wordpress.com/2014/12/30/adding-shadows-to-a-unity-vertexfragment-shader-in-7-easy-steps/		- Tutorial on how to provide shadows to the shader
 
-Audio controller (BMG volume manage):
+**Audio controller (BMG volume manage):**
 https://johnleonardfrench.com/the-right-way-to-make-a-volume-slider-in-unity-using-logarithmic-conversion/
-
-Evaluating user performance in 3D stereo and motion enabled video games: 
-https://www.researchgate.net/publication/254005982_Evaluating_user_performance_in_3D_stereo_and_motion_enabled_video_games/citations
 
 
 ## Team Contributions
