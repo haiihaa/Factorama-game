@@ -1,18 +1,10 @@
-[Open in Visual Studio Code]
+[![Open in Visual Studio Code]]()
 
 
-**The University of Melbourne**
-# COMP30019 – Graphics and Interaction - Acknowledgment
-
-This game project was a school-based project developed by Hai Ha, Haiyao Yan, Jerry Zhou and Katherine Wu. The repository got the permission of all other team members before being copied and published (since the original repo belongs to The University of Melbourne and is private). 
-
-I would like to express my special thanks to my teammates (Haiyao, Jerry and Katherine) who contributed to developing this project and gave me valuable team experience throughout the semester. 
-
-**Link to the game trailer made by Katherine Wu:**
-https://www.youtube.com/watch?v=GZtJLqMDruY
-
+**The University of Melbourne - COMP30019 – Graphics and Interaction**
 
 ## Table of contents
+* [Acknowledgment](#acknowledgment)
 * [Explanation of the game](#explanation-of-the-game)
 * [Technologies](#technologies)
 * [In-Game Images](#in-game-images)
@@ -26,6 +18,15 @@ https://www.youtube.com/watch?v=GZtJLqMDruY
 * [References](#references)
 * [Team Contributions](#team-contributions)
 * [Code Snipets ](#code-snippets)
+
+## Acknowledgment
+
+This game project was a school-based project developed by Hai Ha, Haiyao Yan, Jerry Zhou and Katherine Wu. The repository got the permission of all other team members before being copied and published (since the original repo belongs to The University of Melbourne and is private). 
+
+I would like to express my special thanks to my teammates (Haiyao, Jerry and Katherine) who contributed to developing this project and gave me valuable team experience throughout the semester. 
+
+**Link to the game trailer made by Katherine Wu:**
+https://www.youtube.com/watch?v=GZtJLqMDruY
 
 
 ## Explanation of the game
