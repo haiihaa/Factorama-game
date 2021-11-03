@@ -1,4 +1,4 @@
-[![Open in Visual Studio Code]]()
+[![Open in Visual Studio Code]()]()
 
 
 **The University of Melbourne - COMP30019 – Graphics and Interaction**
