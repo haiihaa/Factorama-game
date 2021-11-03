@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: 110c831af6238d24591308c16f92c2e2
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Hokjesgeest
+  - Hokjesgeest
+  - Hokjesgeest
+  - Hokjesgeest
+  - Hokjesgeest
+  - Hokjesgeest
+  - Hokjesgeest
+  - Hokjesgeest
+  - Hokjesgeest
+  - Hokjesgeest
+  - Hokjesgeest
+  - Hokjesgeest
+  - Hokjesgeest
+  - Hokjesgeest
+  - Hokjesgeest
+  - Hokjesgeest
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

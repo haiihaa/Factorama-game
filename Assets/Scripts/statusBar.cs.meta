@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 359070e2ce1acda45af40ec1aa3d7cc5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - finNote: {instanceID: 0}
+  - targetProf: {instanceID: 0}
+  - money: {instanceID: 0}
+  - time: {instanceID: 0}
+  - currOnVanPanel: {instanceID: 0}
+  - insufficientAmountPanel: {instanceID: 0}
+  - isRunningPanel: {instanceID: 0}
+  - isNotReadyPanel: {instanceID: 0}
+  - van: {instanceID: 0}
+  - fullStorage: {instanceID: 0}
+  - CashIn: {fileID: 8300000, guid: d9dcbc8f11b4b413d8ff640d766d35fa, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

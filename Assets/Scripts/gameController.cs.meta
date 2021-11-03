@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4382db382c31492438170a6ef2ce82b6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - finNote: {instanceID: 0}
+  - pauseText: {instanceID: 0}
+  - levelNo: {instanceID: 0}
+  - completeClip: {instanceID: 0}
+  - fullStorage: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

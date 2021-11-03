@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 721b7ea82b28217449f8014406c93fe8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - PackingProgressBar: {instanceID: 0}
+  - clip1: {fileID: 8300000, guid: 8ce04db7e64ce47bbb6cfcda9e9fc4c4, type: 3}
+  - clip2: {fileID: 8300000, guid: 5238a8dbeff3142c78f1f6a12c886e84, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
