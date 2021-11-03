@@ -124,15 +124,15 @@ The feedback received from the Questionnaire was that participants felt very dis
 
 ## References
 **Highlighting System:**
-https://blog.csdn.net/f_957995490/article/details/105058638?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163360849116780265433318%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163360849116780265433318&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-105058638.pc_search_es_clickV2&utm_term=unity+highlight+system&spm=1018.2226.3001.4187 - Adding highlighting effect to the items - Package used from the link above to generate the highlight effect. As the material for the soccer ball contains a height map, therefore, the illuminate shader could not be used in this case.
+  - https://blog.csdn.net/f_957995490/article/details/105058638?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163360849116780265433318%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163360849116780265433318&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-105058638.pc_search_es_clickV2&utm_term=unity+highlight+system&spm=1018.2226.3001.4187 - Adding highlighting effect to the items - Package used from the link above to generate the highlight effect. As the material for the soccer ball contains a height map, therefore, the illuminate shader could not be used in this case.
 
 **Dissolve Shader:**
-https://lindenreidblog.com/2017/12/16/dissolve-shader-in-unity/	- Tutorial on how to add a dissolve effect to the shader
-https://www.youtube.com/watch?v=4XfXOEDzBx4&t=2113s&ab_channel=WorldofZero 	- Tutorial to help understand how to use vert/frag shaders
-https://alastaira.wordpress.com/2014/12/30/adding-shadows-to-a-unity-vertexfragment-shader-in-7-easy-steps/		- Tutorial on how to provide shadows to the shader
+  - https://lindenreidblog.com/2017/12/16/dissolve-shader-in-unity/	- Tutorial on how to add a dissolve effect to the shader
+  - https://www.youtube.com/watch?v=4XfXOEDzBx4&t=2113s&ab_channel=WorldofZero 	- Tutorial to help understand how to use vert/frag shaders
+  - https://alastaira.wordpress.com/2014/12/30/adding-shadows-to-a-unity-vertexfragment-shader-in-7-easy-steps/		- Tutorial on how to provide shadows to the shader
 
 **Audio controller (BMG volume manage):**
-https://johnleonardfrench.com/the-right-way-to-make-a-volume-slider-in-unity-using-logarithmic-conversion/
+  - https://johnleonardfrench.com/the-right-way-to-make-a-volume-slider-in-unity-using-logarithmic-conversion/
 
 
 ## Team Contributions
